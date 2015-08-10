@@ -1,0 +1,35 @@
+{
+"type":
+	"FeatureCollection",
+	"features":
+		[{
+			"type":"Feature",
+			"properties":{
+				"city":"toronto"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-79.40917968749999,43.77109381775648]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"city":"montreal"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-73.6083984375,45.583289756006316]
+			}
+		},
+		{
+			"type":"Feature",
+			"properties":{
+				"city":"boston"
+			},
+			"geometry":{
+				"type":"Point",
+				"coordinates":[-74.0478515625,40.81380923056958]
+			}
+		}]
+}

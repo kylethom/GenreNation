@@ -1,0 +1,53 @@
+<html>
+
+<head>
+	<title>Genre Nation</title>
+	<link rel="stylesheet" href="stylesheets/genrenation.css" type="text/css">
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+</head>
+
+<body>
+
+	<div id="map-canvas"></div>
+
+	<div id="title-map-cover">
+		<div class="title-wrapper">
+			<h1>Genre Nation</h1>
+			<form id="search">
+				<input id="search-city" type="text" value="search" autocomplete="off"></input>
+				<input id="submit-city" type="submit"></input>
+				<div id="search-error"></div>
+				<div id="loading-artists" style="display:none;">LOADING ARTISTS</div>
+				<p>Search for a city to explore music scenes from all over the world, or click on a city on the map to get started.</p>
+			</form>
+		</div>
+	</div>
+	
+	<div id="data-map-cover">
+		<div id="results-wrapper" class="results-wrapper">
+			
+			<div id="results-wrapper-title">
+			</div>
+			
+			<div id="results-wrapper-inner">
+				
+				<div id="results-wrapper-genres">
+				</div>
+				<div id="results-wrapper-songs">
+				</div>
+			
+			</div>
+		
+		</div>
+	</div>
+
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="http://toma.hk/api.js?v=1"></script>
+	<script src="js/tomahawk.js"></script>
+	<script src="js/genrenation.js"></script>
+
+</body>
+
+</html>
