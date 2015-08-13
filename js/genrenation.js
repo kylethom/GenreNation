@@ -264,12 +264,11 @@ function displayGenres(city, genreData, genreIndex){
 	console.log(locationData[capitalizedCity]);
 
 
-	d3.select('.stations')
-		// .selectAll('svg')
-		.append('svg')
-		.attr('id',city)
-		.attr('class','marker')
-		.each(repositionMarkers());
+	// d3.select('.stations')
+	// 	.append('svg')
+	// 	.attr('id',city)
+	// 	.attr('class','marker')
+	// 	.each(repositionMarkers());
 		// .attr('x',locationData[capitalizedCity][0])
 		// .attr('y',locationData[capitalizedCity][1]);
 
@@ -318,6 +317,8 @@ function displayGenres(city, genreData, genreIndex){
 	$('#results-wrapper-title').html("<p>Results for</p><h1>" + city + " </h1>");
 	$('#results-wrapper-genres').html('');
 	$('#results-wrapper-songs').html('');
+
+console.log(genreData);
 
 	for(var i = genreIndex.length - 1; i > 0; i--){
 		if( genreData[genreIndex[i]].length > 2){
